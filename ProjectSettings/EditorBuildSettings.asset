@@ -5,7 +5,23 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  - enabled: 0
+    path: Assets/Scenes/XRSetup.unity
+    guid: fb8543e433d833b48a8f56a82110524c
+  - enabled: 0
+    path: Assets/Scenes/Rabbitr1.1.unity
+    guid: 98952980ff5a2f9408206e5bbe125ce4
+  - enabled: 0
+    path: Assets/Scenes/Rabbitr1.2.unity
+    guid: 5132d286e12c8524798cb05828a9f42f
+  - enabled: 1
+    path: Assets/Scenes/Rabbit1.3.unity
+    guid: 0b0699f6de52a8642a33f76282f1f501
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 99952d817295d394f8acb39d56ccc12e,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a97ace7f1cb1bac4c851613a7aea67a1,
+      type: 2}

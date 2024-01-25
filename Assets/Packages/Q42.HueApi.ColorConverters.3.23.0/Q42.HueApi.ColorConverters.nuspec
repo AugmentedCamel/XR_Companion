@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Q42.HueApi.ColorConverters</id>
+    <version>3.23.0</version>
+    <authors>Michiel Post, Q42</authors>
+    <projectUrl>https://github.com/Q42/Q42.HueApi</projectUrl>
+    <iconUrl>https://nugetgallery.blob.core.windows.net/icons/DotLessMinification.0.42.1.png</iconUrl>
+    <description>This package only contains the ColorConverers used with Q42.HueApi</description>
+    <tags>philips hue lights</tags>
+    <repository type="GitHub" url="https://github.com/Q42/Q42.HueApi" commit="cd9c98a3b52782735bdb9f91812585d9fb4d006b" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework="net7.0" />
+      <group targetFramework="net8.0" />
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Q42.HueApi.Entertainment</id>
+    <version>3.23.0</version>
+    <authors>Michiel Post, Q42</authors>
+    <projectUrl>https://github.com/Q42/Q42.HueApi</projectUrl>
+    <iconUrl>https://nugetgallery.blob.core.windows.net/icons/DotLessMinification.0.42.1.png</iconUrl>
+    <description>Open source library for interaction with the Philips Hue Bridge Entertainment API. Allows you to control your lights from C#. Supports .Net Standard 2.0 and .net471</description>
+    <tags>philips hue lights entertainment</tags>
+    <repository type="GitHub" url="https://github.com/Q42/Q42.HueApi" commit="cd9c98a3b52782735bdb9f91812585d9fb4d006b" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.1">
+        <dependency id="Q42.HueApi.ColorConverters" version="3.23.0" exclude="Build,Analyzers" />
+        <dependency id="Q42.HueApi" version="3.23.0" exclude="Build,Analyzers" />
+        <dependency id="Portable.BouncyCastle" version="1.9.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net7.0">
+        <dependency id="Q42.HueApi.ColorConverters" version="3.23.0" exclude="Build,Analyzers" />
+        <dependency id="Q42.HueApi" version="3.23.0" exclude="Build,Analyzers" />
+        <dependency id="Portable.BouncyCastle" version="1.9.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="Q42.HueApi.ColorConverters" version="3.23.0" exclude="Build,Analyzers" />
+        <dependency id="Q42.HueApi" version="3.23.0" exclude="Build,Analyzers" />
+        <dependency id="Portable.BouncyCastle" version="1.9.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Q42.HueApi.ColorConverters" version="3.23.0" exclude="Build,Analyzers" />
+        <dependency id="Q42.HueApi" version="3.23.0" exclude="Build,Analyzers" />
+        <dependency id="Portable.BouncyCastle" version="1.9.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.IO" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Runtime" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Algorithms" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Encoding" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Primitives" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.X509Certificates" targetFramework=".NETFramework4.7.1" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: ecd0d5bde571ef246b666e1116b814ac
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Typolino
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2a1799b3887faa040895e7d23562df61, type: 3}
+  - {fileID: 12800000, guid: 542235c0fb7fec2499544058bfc8fed0, type: 3}
+  - {fileID: 12800000, guid: 96ae95efc3d5e4f4dbd23860ff60f1b1, type: 3}
+  - {fileID: 12800000, guid: 9c4b21d1176ddf448b963a720ad8dd95, type: 3}
+  - {fileID: 12800000, guid: 823ff277cc6c57d40969bbcfcd8bdd21, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

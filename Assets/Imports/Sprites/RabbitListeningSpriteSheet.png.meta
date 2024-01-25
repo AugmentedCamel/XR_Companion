@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 145b8c60f6dd45e44b92ef27904c347c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RabbitIsListening
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 237
+        width: 79
+        height: 100
+      alignment: 9
+      pivot: {x: 0.38085803, y: 0.17998458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613f5b8943c1b4d4b94e5e0d0b5ef87a
+      internalID: 1302792533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 237
+        width: 72
+        height: 96
+      alignment: 9
+      pivot: {x: 0.43463728, y: 0.17645518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a712fe7fc53d6294c92a68dca39c39cb
+      internalID: -706965064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 240
+        width: 72
+        height: 92
+      alignment: 9
+      pivot: {x: 0.43463728, y: 0.17261854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6b9c53206b5a2439da82f53138ebb7
+      internalID: -1833965421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 243
+        width: 71
+        height: 92
+      alignment: 9
+      pivot: {x: 0.46023002, y: 0.19308007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590e5a5d4845f904e9981023a7aafc78
+      internalID: 1906107065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 237
+        width: 72
+        height: 92
+      alignment: 9
+      pivot: {x: 0.4215656, y: 0.19308023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3909324f299b2d948850fe18dbb0bd82
+      internalID: 287544616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 82
+        width: 72
+        height: 92
+      alignment: 9
+      pivot: {x: 0.44771004, y: 0.17261854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811a8616fa6ccad41a8fe48f4638c22e
+      internalID: -2080606362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 86
+        width: 72
+        height: 92
+      alignment: 9
+      pivot: {x: 0.4346377, y: 0.19308}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323dc6a561b09af46bca060e5e3dc667
+      internalID: 1686621770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 89
+        width: 72
+        height: 92
+      alignment: 9
+      pivot: {x: 0.4084922, y: 0.18284963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcfba1ac0dfe024596c44b874068f8a
+      internalID: 2011409658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 85
+        width: 72
+        height: 92
+      alignment: 9
+      pivot: {x: 0.43463728, y: 0.18284947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162e6b07620b4e843afcf266e18a032a
+      internalID: -139975454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 89
+        width: 72
+        height: 92
+      alignment: 9
+      pivot: {x: 0.40849304, y: 0.17261896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6611b02f2fe8f7b47bb47dee8e7e6ec6
+      internalID: -341541193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RabbitListeningSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 86
+        width: 71
+        height: 92
+      alignment: 9
+      pivot: {x: 0.46022916, y: 0.1828493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa4c1397415d0f43b90953ed088bd85
+      internalID: -1430164463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ff7e4eeca14c4da41861e563932eaca3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RabbitIsListening: 1302792533
+      RabbitListeningSpriteSheet_0: -466119934
+      RabbitListeningSpriteSheet_1: -1430911760
+      RabbitListeningSpriteSheet_10: -1833965421
+      RabbitListeningSpriteSheet_11: 1906107065
+      RabbitListeningSpriteSheet_12: 287544616
+      RabbitListeningSpriteSheet_13: -2080606362
+      RabbitListeningSpriteSheet_14: 1686621770
+      RabbitListeningSpriteSheet_15: 2011409658
+      RabbitListeningSpriteSheet_16: -139975454
+      RabbitListeningSpriteSheet_17: -341541193
+      RabbitListeningSpriteSheet_18: -1430164463
+      RabbitListeningSpriteSheet_19: 2090129966
+      RabbitListeningSpriteSheet_2: -803466320
+      RabbitListeningSpriteSheet_3: -263449422
+      RabbitListeningSpriteSheet_4: -89457570
+      RabbitListeningSpriteSheet_5: -490268556
+      RabbitListeningSpriteSheet_6: -1450141257
+      RabbitListeningSpriteSheet_7: 2102268754
+      RabbitListeningSpriteSheet_9: -706965064
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

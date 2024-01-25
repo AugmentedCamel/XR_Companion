@@ -1,0 +1,496 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: EnglishRabbit
+  m_EditorClassIdentifier: 
+  _clientAccessToken: N4JEX2MXKO2MD6AAJBBCVUSN3MGAXLMT
+  _appInfo:
+    name: rabbitr1v1
+    id: 1551900722311993
+    lang: en
+    isPrivate: 1
+    createdAt: 2024-01-20T04:25:36-0800
+    trainingStatus: 1
+    lastTrainDuration: 89
+    lastTrainedAt: 2024-01-21T10:18:27-0800
+    nextTrainAt: 2024-01-21T10:16:58-0800
+    intents:
+    - id: 429121246211619
+      name: change_color
+      entities:
+      - name: bool:bool
+        id: 365946866056979
+      - name: color:color
+        id: 858131332729800
+    - id: 1041640143779155
+      name: set_color
+      entities:
+      - name: color:color
+        id: 858131332729800
+      - name: gameobject:gameobject
+        id: 753611833300902
+    - id: 751972816826128
+      name: spawn_cube
+      entities:
+      - name: gameobject:gameobject
+        id: 753611833300902
+    - id: 391283643311556
+      name: spawn_object
+      entities:
+      - name: gameobject:gameobject
+        id: 753611833300902
+    - id: 2034450123591237
+      name: wit$add_time_timer
+      entities: []
+    - id: 769919155042166
+      name: wit$confirmation
+      entities: []
+    entities:
+    - name: LightColor
+      id: 1044357223302919
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: LightColor
+        id: 1056428732134553
+      keywords:
+      - keyword: black
+        synonyms: []
+      - keyword: blue
+        synonyms: []
+      - keyword: brown
+        synonyms: []
+      - keyword: gold
+        synonyms: []
+      - keyword: green
+        synonyms: []
+      - keyword: magenta
+        synonyms: []
+      - keyword: maroon
+        synonyms: []
+      - keyword: none
+        synonyms: []
+      - keyword: orange
+        synonyms: []
+      - keyword: pink
+        synonyms: []
+      - keyword: purple
+        synonyms: []
+      - keyword: red
+        synonyms: []
+      - keyword: violet
+        synonyms: []
+      - keyword: white
+        synonyms: []
+    - name: LightStates
+      id: 665930408832038
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: LightStates
+        id: 3594009364147742
+      keywords:
+      - keyword: Off
+        synonyms: []
+      - keyword: On
+        synonyms: []
+    - name: bool
+      id: 7647596921919600
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: bool
+        id: 365946866056979
+      keywords:
+      - keyword: off
+        synonyms:
+        - off
+      - keyword: on
+        synonyms:
+        - on
+      - keyword: out
+        synonyms:
+        - out
+    - name: color
+      id: 7263006010427204
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: color
+        id: 858131332729800
+      keywords:
+      - keyword: blue
+        synonyms:
+        - blue
+      - keyword: green
+        synonyms:
+        - green
+      - keyword: magenta
+        synonyms:
+        - magenta
+      - keyword: red
+        synonyms:
+        - red
+      - keyword: yellow
+        synonyms:
+        - yellow
+    - name: gameobject
+      id: 388039323723624
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: gameobject
+        id: 753611833300902
+      keywords:
+      - keyword: cube
+        synonyms:
+        - cube
+      - keyword: rabbit
+        synonyms:
+        - rabbit
+      - keyword: sphere
+        synonyms:
+        - ball
+        - sphere
+    traits: []
+    versionTags: []
+    voices:
+    - name: wit$Rebecca
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Charlie
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - fast
+      - projected
+    - name: wit$Cooper
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Vampire
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Prospector
+      locale: en_US
+      gender: male
+      styles:
+      - default
+    - name: wit$Cody
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Remi
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cam
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Connor
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Railey
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cael
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Carl
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Rubie
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Overconfident
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Disaffected
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Hollywood
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Trendy
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Baby
+      locale: en_US
+      gender: nonbinary
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Surfer
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Southern Accent
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Kenyan Accent
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Kid
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Villain
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Rosie
+      locale: en_CA
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Colin
+      locale: en_CA
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Pirate
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$British Butler
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Whimsical
+      locale: en_GB
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Wizard
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cockney Accent
+      locale: en_GB
+      gender: nonbinary
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+  _configData:
+  - {fileID: 496879644519872840}
+  _configurationId: 46aa6026-4dad-491f-9281-20f332262c5b
+  timeoutMS: 10000
+  endpointConfiguration:
+    _uriScheme: 
+    _authority: 
+    _port: 0
+    _witApiVersion: 
+    _message: 
+    _speech: 
+    _dictation: 
+    _synthesize: 
+    _event: 
+    _converse: 
+  isDemoOnly: 0
+  useConduit: 1
+  _manifestLocalPath: ConduitManifest-9ed93ac4-82bd-436b-9859-eeb336f80b69.json
+  excludedAssemblies: []
+  relaxedResolution: 0
+--- !u!114 &496879644519872840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c2918ba0e7451694416d42d69e0944, type: 3}
+  m_Name: WitComposerData
+  m_EditorClassIdentifier: 
+  canvases:
+  - canvasName: Draft
+    contextMap:
+      server:
+      - path: gameobject
+        values:
+        - gameobject:gameobject
+      - path: color
+        values:
+        - color:color
+      client: []
+      shared: []
+    actions:
+    - change_color
+    - confirm
+    - end_decision
+    - reset
+  - canvasName: Live
+    contextMap:
+      server: []
+      client: []
+      shared: []
+    actions:
+    - change_color
+    - confirm
+    - end_decision
+    - reset
+    - RespondSpawnBall
