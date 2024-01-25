@@ -141,6 +141,9 @@ MonoBehaviour:
       - keyword: magenta
         synonyms:
         - magenta
+      - keyword: pur
+        synonyms:
+        - pur
       - keyword: red
         synonyms:
         - red
@@ -156,9 +159,15 @@ MonoBehaviour:
       - name: gameobject
         id: 753611833300902
       keywords:
+      - keyword: controllers
+        synonyms:
+        - controllers
       - keyword: cube
         synonyms:
         - cube
+      - keyword: hands
+        synonyms:
+        - hands
       - keyword: rabbit
         synonyms:
         - rabbit
@@ -166,6 +175,9 @@ MonoBehaviour:
         synonyms:
         - ball
         - sphere
+      - keyword: wheel
+        synonyms:
+        - wheel
     traits: []
     versionTags: []
     voices:
