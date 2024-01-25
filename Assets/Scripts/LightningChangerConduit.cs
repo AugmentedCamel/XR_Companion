@@ -9,7 +9,6 @@ public class LightningChangerConduit : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private HueLamp huelamp;
 
-  
     private void SetLightningState(bool state, UnityEngine.Color color)
     {
         
