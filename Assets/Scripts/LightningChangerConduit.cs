@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Meta.Voice.Samples.ShapesConduit;
 using Meta.Voice.Samples.WitShapes;
 using Meta.WitAi;
@@ -7,19 +8,28 @@ using UnityEngine;
 public class LightningChangerConduit : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private HueLamp huelamp;
+    //[SerializeField] private HueLamp huelamp;
+    [SerializeField] private List<GameObject> hueLamps;
+    private HueLamp _hueLamp;
 
     private void SetLightningState(bool state, UnityEngine.Color color)
     {
-        
-        huelamp.LightingOn();
-        huelamp.SetLightColor(color);
-
+        foreach (var lamp in hueLamps)
+        {
+            _hueLamp = lamp.GetComponent<HueLamp>();
+            _hueLamp.LightingOn();
+            _hueLamp.SetLightColor(color);
+        }
     }
 
     private void SetLightningOff()
     {
-        huelamp.LightingOff();
+        foreach (var lamp in hueLamps)
+        {
+            _hueLamp = lamp.GetComponent<HueLamp>();
+            _hueLamp.LightingOff();
+        }
+        
     }
 
     [MatchIntent("change_lightning")]

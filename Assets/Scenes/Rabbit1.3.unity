@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8785387172211e42b01d065e7b6aa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  huelamp: {fileID: 1858956708}
+  hueLamps: []
 --- !u!1001 &241583705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2832,7 +2832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1132024631
 Transform:
   m_ObjectHideFlags: 0
@@ -2861,7 +2861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   devicePath: 1
-  on: 1
+  on: 0
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1173112717 stripped
 Transform:
@@ -2950,7 +2950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1207061015
 Transform:
   m_ObjectHideFlags: 0
@@ -2979,7 +2979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   devicePath: 3
-  on: 1
+  on: 0
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1209515016
 GameObject:
@@ -3600,6 +3600,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1582015949}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1629321486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629321488}
+  - component: {fileID: 1629321487}
+  m_Layer: 0
+  m_Name: ChatGPT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1629321487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629321486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f801b806211e7b43acc0508503a7dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1629321488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629321486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1693426466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3995,7 +4039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   devicePath: 8
   on: 0
-  color: {r: 0.7169812, g: 0.837, b: 0.0033819948, a: 0.9019608}
+  color: {r: 1, g: 1, b: 1, a: 0.9019608}
 --- !u!4 &1908798990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 83685398960850492, guid: fbfc588a949bb1a42b20e5bddc4cf8cf,
@@ -4126,7 +4170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2058831729
 Transform:
   m_ObjectHideFlags: 0
@@ -4155,7 +4199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   devicePath: 2
-  on: 1
+  on: 0
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &2104894346
 PrefabInstance:
@@ -4643,6 +4687,31 @@ PrefabInstance:
       propertyPath: huelamp
       value: 
       objectReference: {fileID: 1858956708}
+    - target: {fileID: 8086482813369970448, guid: fc4973ff38f61cd42979b2aa064ec13f,
+        type: 3}
+      propertyPath: hueLamps.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086482813369970448, guid: fc4973ff38f61cd42979b2aa064ec13f,
+        type: 3}
+      propertyPath: hueLamps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1132024630}
+    - target: {fileID: 8086482813369970448, guid: fc4973ff38f61cd42979b2aa064ec13f,
+        type: 3}
+      propertyPath: hueLamps.Array.data[1]
+      value: 
+      objectReference: {fileID: 2058831728}
+    - target: {fileID: 8086482813369970448, guid: fc4973ff38f61cd42979b2aa064ec13f,
+        type: 3}
+      propertyPath: hueLamps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1207061014}
+    - target: {fileID: 8086482813369970448, guid: fc4973ff38f61cd42979b2aa064ec13f,
+        type: 3}
+      propertyPath: hueLamps.Array.data[3]
+      value: 
+      objectReference: {fileID: 1858956706}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
