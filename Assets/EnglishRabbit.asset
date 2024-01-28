@@ -24,6 +24,13 @@ MonoBehaviour:
     lastTrainedAt: 2024-01-21T10:18:27-0800
     nextTrainAt: 2024-01-21T10:16:58-0800
     intents:
+    - id: 891887785921629
+      name: activate_object
+      entities:
+      - name: bool:bool
+        id: 365946866056979
+      - name: gameobject:gameobject
+        id: 753611833300902
     - id: 429121246211619
       name: change_color
       entities:
@@ -116,10 +123,13 @@ MonoBehaviour:
       keywords:
       - keyword: off
         synonyms:
+        - disable
         - off
       - keyword: on
         synonyms:
+        - activate
         - on
+        - start
       - keyword: out
         synonyms:
         - out
@@ -144,6 +154,9 @@ MonoBehaviour:
       - keyword: pur
         synonyms:
         - pur
+      - keyword: purple
+        synonyms:
+        - purple
       - keyword: red
         synonyms:
         - red
@@ -168,9 +181,20 @@ MonoBehaviour:
       - keyword: hands
         synonyms:
         - hands
+      - keyword: headlight
+        synonyms:
+        - headlight
+      - keyword: laser
+        synonyms:
+        - laser
+        - lightsaber
       - keyword: rabbit
         synonyms:
         - rabbit
+      - keyword: rabbiteye
+        synonyms:
+        - camera
+        - rabbiteye
       - keyword: sphere
         synonyms:
         - ball

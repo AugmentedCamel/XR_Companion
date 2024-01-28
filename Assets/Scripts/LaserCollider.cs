@@ -6,10 +6,9 @@ using UnityEngine;
 public class LaserCollider : MonoBehaviour
 {
     public string LastHit;
-    public GameObject LaserTarget;
+    private GameObject LaserTarget;
 
-    public GameObject CurrentTarget { get; private set; }
-
+    private GameObject CurrentTarget;
     
     // Start is called before the first frame update
     

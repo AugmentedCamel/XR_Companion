@@ -10,6 +10,8 @@ public class RabbitActionLauncher : MonoBehaviour
     //this script is for the rabbit to launch the action
     [SerializeField] private TextMeshPro DebugText;
     [SerializeField] private GameObject rabbitCasing;
+    [SerializeField] RabbitEye rabbitEye;
+    [SerializeField] private GameObject headLight;
 
     public UnityEvent TestEvent;
     public bool TestBool;
@@ -29,7 +31,31 @@ public class RabbitActionLauncher : MonoBehaviour
         else { Debug.Log("No object to spawn"); }
 
     }
+    public void ActivateObject(string objectname, bool desiredstate) //true is activate, false is deactivate
+    {
+        
+        try { GameObject.Find(objectname).GetComponent<ActivateObject>().Activate(desiredstate); }
+        catch { Debug.Log("No object to activate"); }
+    }
+
+
+
     
+    public void EnableHeadLight() 
+    {
+        if (!headLight) { Debug.Log("No headlight"); return; }
+        headLight.GetComponent<RabbitEye>().EnableLaser();
+    }
+    public void DisableHeadLight()
+    {
+        if (!headLight) { Debug.Log("No headlight"); return; }
+        headLight.GetComponent<RabbitEye>().DisableRabbitEye();
+    }
+    public void EnableRabbitEye() { rabbitEye.EnableRabbitEye(); }
+    public void DisableRabbitEyes() { rabbitEye.DisableRabbitEye(); }
+    public void EnableLaser() { rabbitEye.EnableLaser();}
+    public void DisableLaser() { rabbitEye.DisableLaser(); }
+
     public void HueLightingOn()
     {
         DebugText.text = "Hue Lighting ON";

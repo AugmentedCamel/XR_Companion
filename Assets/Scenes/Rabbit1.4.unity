@@ -717,7 +717,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastHit: 
-  LaserTarget: {fileID: 0}
 --- !u!65 &217687281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2549,6 +2548,7 @@ GameObject:
   - component: {fileID: 1034542253}
   - component: {fileID: 1034542256}
   - component: {fileID: 1034542257}
+  - component: {fileID: 1034542258}
   m_Layer: 0
   m_Name: App Voice Experience
   m_TagString: Untagged
@@ -2802,6 +2802,63 @@ MonoBehaviour:
       - m_Target: {fileID: 8139002452246733131}
         m_TargetAssemblyTypeName: ColorChangerConduit, Assembly-CSharp
         m_MethodName: SetColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDidNotMatch:
+    m_PersistentCalls:
+      m_Calls: []
+  onOutOfDomain:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1034542258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034542252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591c3d6f017c11b4faa41506d75635b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Voice: {fileID: 1034542253}
+  ValidateEarly: 0
+  intent: activate_object
+  confidenceThreshold: 0.6
+  valueMatchers:
+  - path: entities.gameobject:gameobject[0].value
+    witValueReference: {fileID: 0}
+    contentRequired: 0
+    matchMethod: 0
+    comparisonMethod: 0
+    matchValue: 
+    floatingPointComparisonTolerance: 0
+    allowConfidenceOverlap: 0
+    confidenceRanges: []
+  - path: entities.bool:bool[0].value
+    witValueReference: {fileID: 0}
+    contentRequired: 0
+    matchMethod: 0
+    comparisonMethod: 0
+    matchValue: 
+    floatingPointComparisonTolerance: 0
+    allowConfidenceOverlap: 0
+    confidenceRanges: []
+  formattedValueEvents: []
+  onMultiValueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8139002452246733132}
+        m_TargetAssemblyTypeName: ActivateObjectsConduit, Assembly-CSharp
+        m_MethodName: ActivateObject
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5544,6 +5601,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 459718, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 459718, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 459718, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 459718, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 459718, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.957
+      objectReference: {fileID: 0}
     - target: {fileID: 2037080, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6326,7 +6403,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastHit: 
-  LaserTarget: {fileID: 0}
 --- !u!114 &923774202107028471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13682,7 +13758,7 @@ GameObject:
   - component: {fileID: 5205830858739272922}
   - component: {fileID: 2366557351713655042}
   m_Layer: 0
-  m_Name: Rabbit r2
+  m_Name: Rabbit r3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15956,6 +16032,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DebugText: {fileID: 0}
   rabbitCasing: {fileID: 3193282826512220889}
+  rabbitEye: {fileID: 152213524}
+  headLight: {fileID: 0}
   TestEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -16521,7 +16599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7113167560447834279
 Transform:
   m_ObjectHideFlags: 0
@@ -21779,6 +21857,7 @@ GameObject:
   - component: {fileID: 6647830014890345215}
   - component: {fileID: 1034073864843124973}
   - component: {fileID: 8139002452246733131}
+  - component: {fileID: 8139002452246733132}
   m_Layer: 0
   m_Name: RabbitActions
   m_TagString: Untagged
@@ -21954,6 +22033,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rabbitActionLauncher: {fileID: 6647830014890345215}
+--- !u!114 &8139002452246733132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8033513533228101246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a564fa57927f97c46afdb85541d0d33a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8142614011130828167
 Transform:
   m_ObjectHideFlags: 0
@@ -22942,18 +23033,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1034542253}
         m_TargetAssemblyTypeName: Meta.WitAi.VoiceService, Meta.WitAi
         m_MethodName: Activate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2615309774836539574}
-        m_TargetAssemblyTypeName: SetAnchorsToLighting, Assembly-CSharp
-        m_MethodName: SetLocationHueLamps
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
