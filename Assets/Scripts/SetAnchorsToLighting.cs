@@ -12,9 +12,9 @@ public class SetAnchorsToLighting : MonoBehaviour
     
     [SerializeField] List<GameObject> HueLamps;
     private List<Transform> AnchorLocation = new List<Transform>();
+    public List<GameObject> FloorAnchors = new List<GameObject>();
     protected OVRSceneManager SceneManager { get; private set; }
     
-
     private void Awake()
     {
         SceneManager = GetComponent<OVRSceneManager>();
@@ -29,6 +29,7 @@ public class SetAnchorsToLighting : MonoBehaviour
     private void OnSceneModelLoadedSuccesfully()
     {
         StartCoroutine(GetThePositionsOfAnchors());
+        StartCoroutine(FindFloorAnchors());
     }
 
     private IEnumerator GetThePositionsOfAnchors()
@@ -42,7 +43,27 @@ public class SetAnchorsToLighting : MonoBehaviour
         }
         
     }
-    
+
+    private IEnumerator FindFloorAnchors()
+    {
+        yield return new WaitForEndOfFrame();
+
+        SpawnFloorObjects[] SpawnFloorObjects = FindObjectsOfType<SpawnFloorObjects>();
+        foreach (SpawnFloorObjects spawnFloorObjects in SpawnFloorObjects)
+        {
+            FloorAnchors.Add(spawnFloorObjects.gameObject);
+        }
+
+    }
+
+    public void SpawnObjectsOnFloor(GameObject prefab)
+    {
+        foreach (GameObject floorAnchor in FloorAnchors)
+        {
+            floorAnchor.GetComponent<SpawnFloorObjects>().SpawnThisObjectOnFloor(prefab);
+        }
+    }
+
 
     public void SetLocationHueLamps()
     {

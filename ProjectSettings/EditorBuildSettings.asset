@@ -23,9 +23,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/HueLighting.unity
     guid: 8a682e30d647af849abf49de9fd6924a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Rabbit1.4.unity
     guid: 3d1e409690819194a9c610aa93bce3a5
+  - enabled: 0
+    path: Assets/Scenes/Rabbit1.5.unity
+    guid: 259c1d91e37f0aa4383cf59fa10b102f
+  - enabled: 0
+    path: Assets/Rabbit1.6.unity
+    guid: 9e9925f0a52a71444ac1d1e7b5810548
+  - enabled: 1
+    path: Assets/Scenes/Rabbit1.7.unity
+    guid: 9ea00605054480e488af05e4f34928e5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 99952d817295d394f8acb39d56ccc12e,
       type: 2}

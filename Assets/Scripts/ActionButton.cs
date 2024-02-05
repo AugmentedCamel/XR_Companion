@@ -14,10 +14,9 @@ public class ActionButton : MonoBehaviour
     [SerializeField] private ParticleSystem particlesListening;
     [SerializeField] public UnityEvent OnButtonActive;
     [SerializeField] public UnityEvent OnButtonRelease;
-    
+
     [SerializeField] private GameObject RabbitDisplay;
     private RabbitDisplaycontroller rabbitDisplayController;
-    
 
     private bool IsListening = false;
 
@@ -27,14 +26,13 @@ public class ActionButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        debugText.text = "Button Not Pressed";
-        //animator = GetComponent<Animator>();
+        
         if (animator != null ) { Debug.Log("Animator found"); }
         else { Debug.Log("Animator not found"); }
 
         rabbitDisplayController = RabbitDisplay.GetComponent<RabbitDisplaycontroller>();
 
-
+        IsListening = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -78,9 +76,6 @@ public class ActionButton : MonoBehaviour
         particlesListening.Stop();
         rabbitDisplayController.OnIdle();
     }
-    
-    
-   
 
     // Update is called once per frame
     void Update()
@@ -99,17 +94,6 @@ public class ActionButton : MonoBehaviour
             buttonTestTriggerExit = false;
             RabbitIdling();
         }
-        
-        /*if(IsListening)
-        {
-            particlesListening.Play();
-            debugText.text = "IsListening is true";
-        }
-        else
-        {
-            particlesListening.Stop();
-            debugText.text = "IsListening is false";
-        }*/
 
     }
 }

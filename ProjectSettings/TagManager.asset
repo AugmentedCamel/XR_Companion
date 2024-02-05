@@ -8,6 +8,9 @@ TagManager:
   - changeable_color
   - lamp
   - HueLamp
+  - Floor
+  - Desk
+  - Bacteria
   layers:
   - Default
   - TransparentFX

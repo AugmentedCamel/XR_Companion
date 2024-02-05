@@ -12,14 +12,27 @@ public class RabbitActionLauncher : MonoBehaviour
     [SerializeField] private GameObject rabbitCasing;
     [SerializeField] RabbitEye rabbitEye;
     [SerializeField] private GameObject headLight;
-
+    [SerializeField] private SetAnchorsToLighting sceneAnchors;
+    [SerializeField] private RoomManager roomManager;
+    [SerializeField] private GameObject SpawnObjectPrefab;
+    [SerializeField] private GameObject pointCollector;
+    
+    private PointCollectorManager pointCollectorManager;
+    private CleanObjectsManager cleanObjectsManager;
+    
     public UnityEvent TestEvent;
     public bool TestBool;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pointCollector = GameObject.Find("PointCollector3");
+        if (pointCollector) 
+        { 
+            pointCollectorManager = pointCollector.GetComponent<PointCollectorManager>(); 
+            cleanObjectsManager = pointCollector.GetComponent<CleanObjectsManager>(); 
+        }
+        else { Debug.Log("No point collector found"); }
     }
 
     public void SpawnObject(GameObject ob)
@@ -31,6 +44,15 @@ public class RabbitActionLauncher : MonoBehaviour
         else { Debug.Log("No object to spawn"); }
 
     }
+    private void SpawnObjectAt(Vector3 pos, GameObject ob)
+    {
+        if (ob != null)
+        {
+            Instantiate(ob, pos, Quaternion.identity);
+        }
+        else { Debug.Log("No object to spawn"); }
+    }
+
     public void ActivateObject(string objectname, bool desiredstate) //true is activate, false is deactivate
     {
         
@@ -90,9 +112,23 @@ public class RabbitActionLauncher : MonoBehaviour
 
     }   
 
-    public void TestColorCasing()
+    public void SpawnObjectsOnFloor()
     {
-        SetColorCasing(Color.green);
+        //get list of spawnable positions
+        List<Vector3> spawnablePos = roomManager.GetAvailableSpawnLocations();
+        
+        foreach (Vector3 pos in spawnablePos) { SpawnObjectAt(pos, SpawnObjectPrefab); }
+        Debug.Log("spawned Objects on floor");
+        //gets the Anchor lighting script and spawns an object on all floor objects
+        //sceneAnchors.SpawnObjectsOnFloor(SpawnObjectPrefab);
+        //Debug.Log("spawned Objects on floor");
+    }
+
+    public void SpawnObjectsOnDesk()
+    {
+        if (cleanObjectsManager == null) { Debug.Log("No clean objects manager found"); return; }
+        cleanObjectsManager.SpawnObjectsOnDesk();
+        
     }
 
     // Update is called once per frame
